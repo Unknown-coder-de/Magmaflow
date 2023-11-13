@@ -1,6 +1,6 @@
 # Magnaflow
 # Overview
-Hello everyone! This is Yash Raj Singh Rawat. This repository contains C++ code for a simple tensor library, including a tensor class (tensor.cpp), basic operations on tensors, and a printing utility (print.cpp). The code is structured into three main files: torch.cpp, tensor.cpp, and print.cpp.
+Hello everyone! I'm Yash Raj Singh Rawat. I had coded this. This repository contains C++ code for a simple tensor library, including a tensor class (tensor.cpp), basic operations on tensors, and a printing utility (print.cpp). The code is structured into three main files: torch.cpp, tensor.cpp, and print.cpp.
 
 # File Descriptions
 # torch.cpp
