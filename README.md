@@ -86,3 +86,5 @@ Tensor b:
   {2.0, 2.0},
   {2.0, 2.0}}}
 ```
+
+Linear layer is an example for you. You can code it further and use it freely!.
