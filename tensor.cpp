@@ -46,6 +46,26 @@ struct tensor
   const float &at(const args &...indices)
       const noexcept { return arr.data[compute.index<n...>(indices...)]; }
 
+  float E() const noexcept
+  {
+    float sum = 0;
+    for_n(arr.len, i) sum += arr.data[i];
+    return sum;
+  }
+  inline float mean() const noexcept { return this->E() / arr.len; }
+  float max() const noexcept
+  {
+    float _max_ = arr.data[0];
+    for_fn(1, arr.len, i) if (_max_ < arr.data[i]) _max_ = arr.data[i];
+    return _max_;
+  }
+  float min() const noexcept
+  {
+    float _min_ = arr.data[0];
+    for_fn(1, arr.len, i) if (_min_ > arr.data[i]) _min_ = arr.data[i];
+    return _min_;
+  }
+
   template <typename... args>
   float &operator[](const args &...indices) noexcept { return arr.data[compute.index<n...>(indices...)]; }
 
